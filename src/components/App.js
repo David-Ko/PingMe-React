@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import Welcome from "./Welcome";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-function App(props){
-    return(
-        <div>
-            <h1>Ping Me</h1> 
-            <p>A leading app for like-minded professional to expand their network</p>
-        </div>
-    )
+function App(props) {
+  return (
+    <BrowserRouter>
+      <Route path="/" exact component={Welcome} />
+    </BrowserRouter>
+  );
 }
+
 export default App;
